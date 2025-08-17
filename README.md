@@ -10,27 +10,29 @@ All steps—from raw data loading and preprocessing through model building and r
 
 # Features
 
-Data Exploration: Initial inspection of customer demographics (Age, Gender, Annual Income, Spending Score).
+**Data Exploration:**
 
-Preprocessing:
+Initial inspection of customer demographics (Age, Gender, Annual Income, Spending Score).
+
+**Preprocessing:**
 
 Label encoding for categorical features (Gender).
 
 Standardization for feature scaling.
 
-Clustering Algorithm:
+**Clustering Algorithm:**
 
 K-Means clustering applied to customer data.
 
 Identification of optimal cluster count using the Elbow Method.
 
-Visualization:
+**Visualization:**
 
 Scatter plots and cluster overlays for visual validation of groups.
 
 Interpret clusters in terms of spending scores, income, age, and gender.
 
-Customer Segmentation:
+**Customer Segmentation:**
 
 Assignment of each customer to a cluster/category (Customer_Category).
 
@@ -44,7 +46,7 @@ Mall_Customers.csv: Dataset used (should be placed in the project directory).
 
 # Step-by-Step Workflow
 
-1. Import Libraries
+**1. Import Libraries**
 
 numpy, pandas, seaborn, matplotlib
 
@@ -52,19 +54,19 @@ scikit-learn (LabelEncoder, StandardScaler, KMeans)
 
 pickle for saving objects
 
-2. Load Data
+**2. Load Data**
 
 Read Mall_Customers.csv into a pandas DataFrame.
 
 Display initial records for inspection.
 
-3. Preprocessing
+**3. Preprocessing**
 
 Label Encoding: Convert Gender from ‘Male’/'Female' to numerical values.
 
 Feature Scaling: Standardize the features for clustering analysis.
 
-4. Clustering with K-Means
+**4. Clustering with K-Means**
 
 Fit K-Means algorithm on normalized customer features.
 
@@ -72,13 +74,13 @@ Use Elbow method to identify optimal number of clusters.
 
 Assign cluster labels (Customer_Category) to each record.
 
-5. Visualization and Insights
+**5. Visualization and Insights**
 
 Visualize clusters and centroids.
 
 Analyze cluster characteristics (e.g., high spenders vs. budget shoppers).
 
-6. Results Output
+**6. Results Output**
 
 Output DataFrame with cluster assignment:
 
